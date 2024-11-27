@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+        }
+        .datetime {
+            font-size: 48px; /* Fonte grande para a data e hora */
+            color: #555;
+            font-weight: bold; /* Negrito para destacar */
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data e Hora</h1>
+        <div class="datetime" id="datetime">{{ datetime }}</div>
+        <p><a href="/">Voltar para a Página Inicial</a></p>
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const datetimeString = now.toLocaleString('pt-BR', { 
+                timeZone: 'America/Sao_Paulo', 
+                hour12: false 
+            });
+            document.getElementById('datetime').textContent = datetimeString;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>

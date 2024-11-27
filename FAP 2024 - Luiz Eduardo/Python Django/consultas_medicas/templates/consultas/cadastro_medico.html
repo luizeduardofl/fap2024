@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Médicos</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Médicos</h2>
+        <form method="POST" action="{% url 'cadastro_medico' %}">
+            {% csrf_token %}
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" name="especialidade" required>
+
+
+            <label for="crm">CRM:</label>
+            <input type="text" id="crm" name="crm" required>
+
+
+            <label for="horarios_disponiveis">Horários Disponíveis (JSON):</label>
+            <textarea id="horarios_disponiveis" name="horarios_disponiveis" required placeholder='Exemplo: {"segunda": ["09:00", "10:00"], "terca": ["14:00"]}'></textarea>
+
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
