@@ -1,6 +1,6 @@
 # fap2024
 
-Seja bem-vindo. Este repositório contém os códigos e projetos desenvolvidos durante o curso **Formação Acelerada em Programação (FAP)** 2024, oferecido pela **Softex Pernambuco**. 
+Este repositório contém os códigos e projetos desenvolvidos durante o curso **Formação Acelerada em Programação (FAP)** 2024, oferecido pela **Softex Pernambuco**. 
 
 ## Sobre o curso
 
