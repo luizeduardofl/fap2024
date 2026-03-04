@@ -20,12 +20,8 @@ Durante o curso, os alunos seguiram um ciclo para o aprendizado:
 
 ## Organização dos Códigos
 
-- **Códigos `.ipynb`**: Foram criados no **Google Colab**, aproveitando sua praticidade para experimentação e prototipagem rápida de algoritmos e projetos.
-- **Projetos Django**: Desenvolvidos utilizando o **Visual Studio Code (VS Code)**, uma ferramenta versátil e amplamente usada para desenvolvimento web.
-
-## Como contribuir
-
-Fique à vontade para explorar os códigos, sugerir melhorias ou até mesmo contribuir com novos exemplos e projetos.
+- **Códigos `.ipynb`**: Foram criados no **Google Colab**.
+- **Projetos Django**: Desenvolvidos utilizando o **VS Code**.
 
 ## Licença
 
